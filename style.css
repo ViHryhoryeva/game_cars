@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     min-width: 320px;
+    overflow: hidden;
 }
 .wrapperBlock {
     display: flex;
@@ -200,7 +200,7 @@ body {
     bottom: 10%;
 }
 
-@media only all and (max-width: 800px) {
+@media only all and (max-width: 1100px) {
     .arrowLeft,
     .arrowRight,
     .arrowTop,
@@ -209,25 +209,49 @@ body {
     }
 }
 
-/*@media only all and (max-width: 800px) {*/
-/*    !*.road {*!*/
-/*    !*    width: 50vw;*!*/
-/*    !*}*!*/
-/*    .car {*/
-/*        width: 50px;*/
-/*    }*/
-/*    .car2 {*/
-/*        width: 60px;*/
-/*    }*/
-/*    .arrowLeft {*/
-/*        left: 10%;*/
-/*    }*/
-/*    .arrowTop {*/
-/*        left: 43%;*/
-/*    }*/
-/*    .arrowRight {*/
-/*        right: 10%;*/
-/*    }*/
-/*}*/
+@media only all and (max-width: 800px) {
+    /*.road {*/
+    /*    width: 50vw;*/
+    /*}*/
+    .car {
+        width: 50px;
+    }
+    .car2 {
+        width: 60px;
+    }
+    .arrowLeft {
+        left: 10%;
+    }
+    .arrowTop {
+        left: 43%;
+    }
+    .arrowRight {
+        right: 10%;
+    }
+    .tree1 {
+        transform: translate(-160px, -5vh);
+        width: 210px;
+    }
+    .tree2 {
+        transform: translate(-180px, 25vh);
+        width: 230px;
+    }
+    .tree3 {
+        transform: translate(-150px, 70vh);
+        width: 250px;
+    }
+    .tree4 {
+        transform: translate(160px, -5vh);
+        width: 210px;
+    }
+    .tree5 {
+        transform: translate(140px, 30vh);
+        width: 230px;
+    }
+    .tree6 {
+        transform: translate(180px, 120vh);
+        width: 250px;
+    }
+}
 
 
