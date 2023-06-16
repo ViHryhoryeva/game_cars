@@ -77,16 +77,16 @@ function Controller(car, view, storage) {
     }
 
 
-    view.getMoveArrowLeft.addEventListener('touchstart', car.moveLeft(), false);
-    view.getMoveArrowLeft.addEventListener('touchend', car.stopMoveLeft(), false);
+    view.getMoveArrowLeft().addEventListener('touchstart', car.moveLeft(), false);
+    view.getMoveArrowLeft().addEventListener('touchend', car.stopMoveLeft(), false);
 
-    view.getMoveArrowTop.addEventListener('touchstart', car.moveTop(), false);
-    view.getMoveArrowTop.addEventListener('touchend', car.stopMoveTop(), false);
+    view.getMoveArrowTop().addEventListener('touchstart', car.moveTop(), false);
+    view.getMoveArrowTop().addEventListener('touchend', car.stopMoveTop(), false);
 
-    view.getMoveArrowRight.addEventListener('touchstart', car.moveRight(), false);
-    view.getMoveArrowRight.addEventListener('touchend', car.stopMoveRight(), false);
+    view.getMoveArrowRight().addEventListener('touchstart', car.moveRight(), false);
+    view.getMoveArrowRight().addEventListener('touchend', car.stopMoveRight(), false);
 
-    view.getMoveArrowDown.addEventListener('touchstart', car.moveBottom(), false);
-    view.getMoveArrowDown.addEventListener('touchend', car.stopMoveBottom(), false);
+    view.getMoveArrowDown().addEventListener('touchstart', car.moveBottom(), false);
+    view.getMoveArrowDown().addEventListener('touchend', car.stopMoveBottom(), false);
 
 }

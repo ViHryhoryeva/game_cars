@@ -137,8 +137,6 @@ function View() {
         window.location.reload();
     }
 
-
-    // 4 геттера на сенсорные кнопки
     self.getMoveArrowTop = function () {
         return arrowTop;
     }
