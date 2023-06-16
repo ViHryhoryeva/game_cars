@@ -5,6 +5,8 @@ body {
     overflow: hidden;
 }
 .wrapperBlock {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     background: #666b3a;
@@ -114,8 +116,8 @@ body {
 }
 .pause-btn {
     position: fixed;
-    right: 1%;
-    top: 1%;
+    right: 3%;
+    top: 3%;
     background: transparent;
     border: none;
     padding: 0;
@@ -128,8 +130,8 @@ body {
 }
 .game-score {
     position: absolute;
-    right: 10px;
-    top: 60px;
+    right: 3%;
+    top: 7%;
     background: crimson;
     border-radius: 50%;
     display: flex;
@@ -211,7 +213,7 @@ body {
     }
 }
 
-@media only all and (max-width: 800px) {
+@media only all and (max-width: 500px) {
     /*.road {*/
     /*    width: 50vw;*/
     /*}*/
@@ -224,7 +226,8 @@ body {
     .arrowLeft {
         left: 10%;
     }
-    .arrowTop {
+    .arrowTop,
+    .arrowDown {
         left: 43%;
     }
     .arrowRight {
