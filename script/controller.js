@@ -78,8 +78,9 @@ function Controller(car, view, storage) {
 
 
     view.getMoveArrowLeft().addEventListener('touchstart', car.moveLeft(), false);
+    console.log(view.getMoveArrowLeft(car.moveLeft()))
     view.getMoveArrowLeft().addEventListener('touchend', car.stopMoveLeft(), false);
-
+    console.log()
     view.getMoveArrowTop().addEventListener('touchstart', car.moveTop(), false);
     view.getMoveArrowTop().addEventListener('touchend', car.stopMoveTop(), false);
 

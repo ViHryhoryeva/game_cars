@@ -70,7 +70,7 @@ body {
 }
 .road {
     background: #414046;
-    width: 500px;
+    width: 400px;
     height: 100vh;
     border-left: 10px dashed white;
     border-right: 10px dashed white;
@@ -209,31 +209,25 @@ body {
     }
 }
 
-@media only all and (max-width: 600px) {
-    .menu {
-        display: none;
-        width: 10%;
-        height: 10%;
-        padding: 0;
-    }
-    .menu.active {
-        display: block;
-    }
-    .road {
-        width: 70%;
-    }
-    .car {
-        width: 50px;
-    }
-    .car2 {
-        width: 60px;
-    }
-    .arrowLeft {
-        left: 10%;
-    }
-    .arrowRight {
-        right: 10%;
-    }
-}
+/*@media only all and (max-width: 800px) {*/
+/*    !*.road {*!*/
+/*    !*    width: 50vw;*!*/
+/*    !*}*!*/
+/*    .car {*/
+/*        width: 50px;*/
+/*    }*/
+/*    .car2 {*/
+/*        width: 60px;*/
+/*    }*/
+/*    .arrowLeft {*/
+/*        left: 10%;*/
+/*    }*/
+/*    .arrowTop {*/
+/*        left: 43%;*/
+/*    }*/
+/*    .arrowRight {*/
+/*        right: 10%;*/
+/*    }*/
+/*}*/
 
 
