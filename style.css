@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-width: 320px;
+}
+.wrapperBlock {
+    display: flex;
+    justify-content: center;
+    background: #666b3a;
+}
+
+.menu-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #666b3a;
+    width: 200px;
+    height: 100px;
+    top: 20vh;
+}
+.table-records {
+    display: none;
+    border: solid white 1px;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    background: #666b3a;
+    z-index: 1000;
+}
+.table-records tr {
+    border: solid white 1px;
+    font-size: 20px;
+    color: white;
+}
+.table-records th,
+.table-records td {
+    border: solid white 1px;
+    padding: 5px;
+}
+
+.player {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 20vh;
+    width: 200px;
+    height: 200px;
+    background: #666b3a;
+    color: black;
+    padding: 5px;
+}
+.name-player,
+.game-btn,
+.records-btn {
+    margin: 10px 10px;
+    padding: 5px;
+    background: beige;
+}
+.save {
+    width: 150px;
+    height: 30px;
+    border: #414046 solid 2px;
+    background: beige;
+}
+.player img {
+    width: 80%;
+}
+.road {
+    background: #414046;
+    width: 500px;
+    height: 100vh;
+    border-left: 10px dashed white;
+    border-right: 10px dashed white;
+}
+
+.car {
+    position: absolute;
+    width: 70px;
+    transform: translateY(70vh);
+    z-index: 5;
+}
+.tree {
+    position: absolute;
+    z-index: 10;
+}
+.tree1 {
+    transform: translate(-360px, -5vh);
+    width: 210px;
+}
+.tree2 {
+    transform: translate(-380px, 25vh);
+    width: 230px;
+}
+.tree3 {
+    transform: translate(-350px, 70vh);
+    width: 250px;
+}
+.tree4 {
+    transform: translate(360px, -5vh);
+    width: 210px;
+}
+.tree5 {
+    transform: translate(340px, 30vh);
+    width: 230px;
+}
+.tree6 {
+    transform: translate(380px, 120vh);
+    width: 250px;
+}
+.pause-btn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform .3s ease;
+    z-index: 10;
+}
+.pause-btn img {
+    width: 40px;
+}
+.game-score {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    background: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    z-index: 15;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.play {
+    display: none;
+}
+.pause-btn:hover {
+    transform: scale(1.2);
+}
+.car2 {
+    position: absolute;
+    width: 80px;
+    transform: translate(100px, -100px);
+    z-index: 5;
+}
+.coin {
+    position: absolute;
+    width: 50px;
+    transform: translate(50px, -100px);
+}
+.game-off {
+    position: absolute;
+    top: 200px;
+    font-size: 18px;
+    color: white;
+    background: #666b3a;
+    width: 200px;
+    height: 120px;
+    z-index: 100;
+    text-align: center;
+}
+.game-off div {
+    margin: 10px;
+}
+.restart-btn {
+    border-color: white;
+    border-radius: 20px;
+    background: #666b3a;
+    color: white;
+    padding: 5px;
+}
+.arrowAll {
+    position: absolute;
+    visibility: hidden;
+    z-index: 10;
+}
+.arrowLeft {
+    left: 20%;
+    bottom: 10%;
+}
+.arrowTop {
+    left: 43%;
+    bottom: 20%;
+}
+.arrowDown {
+    bottom: 2%;
+    left: 43%;
+}
+.arrowRight {
+    right: 20%;
+    bottom: 10%;
+}
+
+@media only all and (max-width: 800px) {
+    .arrowLeft,
+    .arrowRight,
+    .arrowTop,
+    .arrowDown {
+        visibility: visible;
+    }
+}
+
+@media only all and (max-width: 600px) {
+    .menu {
+        display: none;
+        width: 10%;
+        height: 10%;
+        padding: 0;
+    }
+    .menu.active {
+        display: block;
+    }
+    .road {
+        width: 70%;
+    }
+    .car {
+        width: 50px;
+    }
+    .car2 {
+        width: 60px;
+    }
+    .arrowLeft {
+        left: 10%;
+    }
+    .arrowRight {
+        right: 10%;
+    }
+}
+
+

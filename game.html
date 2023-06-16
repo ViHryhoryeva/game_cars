@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0">
+
+    <title>My_game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="myPage">
+        <div class="wrapperBlock">
+            <div class="menu-form">
+                <input type="button" class="game-btn" value="Новая игра">
+                <input type="button" class="records-btn" value="Рекорды" id="one-time">
+            </div>
+            <div class="table-records"></div>
+            <div class="player">
+                <label>Ваше имя:</label>
+                <input class="name-player" type="text" id='IName'>
+                <input type="button" value="Играть" class="save">
+                <br>
+                <img src="images/Tesla-Roadster-Download-Free-PNG.png">
+            </div>
+            <div class="road"></div>
+
+            <img class="car" src="images/orange-car.png">
+            <img class="tree tree1" src="images/tree111.png">
+            <img class="tree tree2" src="images/tree111.png">
+            <img class="tree tree3" src="images/tree111.png">
+            <img class="tree tree4" src="images/tree111.png">
+            <img class="tree tree5" src="images/tree111.png">
+            <img class="tree tree6" src="images/tree111.png">
+
+            <img class="car2" src="images/car_pink.png">
+            <img class="coin" src="images/coin.png">
+
+            <button class="pause-btn">
+                <img class="pause" src="images/pause.png">
+                <img class="play" src="images/play.png">
+            </button>
+
+            <div class="game-score">0</div>
+
+            <div class="game-off">
+                <div class="end">Конец игры!!!</div>
+                <div class="text">Счет игры:
+                    <span class="text-score">0</span>
+                </div>
+                <button type="button" class="restart-btn">Начать игру заново</button>
+            </div>
+
+            <div class="arrow">
+                <img class="arrowLeft arrowAll" src="images/svg%20(14).svg">
+                <img class="arrowTop arrowAll" src="images/svg%20(15).svg">
+                <img class="arrowDown arrowAll" src="images/svg%20(16).svg">
+                <img class="arrowRight arrowAll" src="images/svg%20(13).svg">
+            </div>
+        </div>
+    </div>
+
+    <script src="script/jquery.js"></script>
+    <script src="script/parameters.js"></script>
+    <script src="script/engine.js"></script>
+    <script src="script/model.js"></script>
+    <script src="script/view.js"></script>
+    <script src="script/storage.js"></script>
+    <script src="script/controller.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+</html>
