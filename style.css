@@ -139,7 +139,7 @@ body {
 .game-score {
     position: absolute;
     right: 3%;
-    top: 7%;
+    top: 10%;
     background: crimson;
     border-radius: 50%;
     display: flex;

@@ -77,17 +77,49 @@ function Controller(car, view, storage) {
     }
 
 
-    view.getMoveArrowLeft().addEventListener('touchstart', car.moveLeft(), false);
-    view.getMoveArrowLeft().addEventListener('touchmove', car.moveLeft(), false);
-    view.getMoveArrowLeft().addEventListener('touchend', car.stopMoveLeft(), false);
+    view.getMoveArrowLeft().addEventListener('touchstart', arrowTouchStartLeft, false);
+    view.getMoveArrowLeft().addEventListener('touchend', arrowTouchEndLeft, false);
 
-    view.getMoveArrowTop().addEventListener('touchstart', car.moveTop(), false);
-    view.getMoveArrowTop().addEventListener('touchend', car.stopMoveTop(), false);
+    view.getMoveArrowTop().addEventListener('touchstart', arrowTouchStartTop, false);
+    view.getMoveArrowTop().addEventListener('touchend', arrowTouchEndTop, false);
 
-    view.getMoveArrowRight().addEventListener('touchstart', car.moveRight(), false);
-    view.getMoveArrowRight().addEventListener('touchend', car.stopMoveRight(), false);
+    view.getMoveArrowRight().addEventListener('touchstart', arrowTouchStartRight, false);
+    view.getMoveArrowRight().addEventListener('touchend', arrowTouchEndRight, false);
 
-    view.getMoveArrowDown().addEventListener('touchstart', car.moveBottom(), false);
-    view.getMoveArrowDown().addEventListener('touchend', car.stopMoveBottom(), false);
+    view.getMoveArrowDown().addEventListener('touchstart', arrowTouchStartBottom, false);
+    view.getMoveArrowDown().addEventListener('touchend', arrowTouchEndBottom, false);
+
+    function arrowTouchStartLeft(eo) {
+        eo.preventDefault();
+        car.moveLeft();
+    }
+    function arrowTouchEndLeft(eo) {
+        eo.preventDefault();
+        car.stopMoveLeft();
+    }
+    function arrowTouchStartTop(eo) {
+        eo.preventDefault();
+        car.moveTop();
+    }
+    function arrowTouchEndTop(eo) {
+        eo.preventDefault();
+        car.stopMoveTop();
+    }
+    function arrowTouchStartRight(eo) {
+        eo.preventDefault();
+        car.moveRight();
+    }
+    function arrowTouchEndRight(eo) {
+        eo.preventDefault();
+        car.stopMoveRight();
+    }
+    function arrowTouchStartBottom(eo) {
+        eo.preventDefault();
+        car.moveBottom();
+    }
+    function arrowTouchEndBottom(eo) {
+        eo.preventDefault();
+        car.stopMoveBottom();
+    }
 
 }
