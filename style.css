@@ -13,6 +13,7 @@ body {
 .menu-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
     background: #666b3a;
     width: 200px;
@@ -55,6 +56,7 @@ body {
 .name-player,
 .game-btn,
 .records-btn {
+    width: 70%;
     margin: 10px 10px;
     padding: 5px;
     background: beige;
@@ -107,7 +109,7 @@ body {
     width: 230px;
 }
 .tree6 {
-    transform: translate(140%, 120vh);
+    transform: translate(140%, 70vh);
     width: 250px;
 }
 .pause-btn {
@@ -227,30 +229,6 @@ body {
     }
     .arrowRight {
         right: 10%;
-    }
-    .tree1 {
-        transform: translate(-160px, -5vh);
-        width: 210px;
-    }
-    .tree2 {
-        transform: translate(-180px, 25vh);
-        width: 230px;
-    }
-    .tree3 {
-        transform: translate(-150px, 70vh);
-        width: 250px;
-    }
-    .tree4 {
-        transform: translate(160px, -5vh);
-        width: 210px;
-    }
-    .tree5 {
-        transform: translate(140px, 30vh);
-        width: 230px;
-    }
-    .tree6 {
-        transform: translate(180px, 120vh);
-        width: 250px;
     }
 }
 
