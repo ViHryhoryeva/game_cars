@@ -61,13 +61,13 @@ function Controller(car, view, storage) {
     });
 
 
-    window.onbeforeunload = befUnload();
+    window.onbeforeunload = befUnload;
 
     function befUnload(eo) {
         eo = eo || window.event;
-        if (state === 2) {
-            eo.returnValue = 'Данные не будут сохранены!';
-        }
+        eo.preventDefault();
+        eo.returnValue = 'Данные не будут сохранены!';
+
     }
 
     window.onload = function () { // однократное нажатие на кнопку "Рекорды"
@@ -121,5 +121,4 @@ function Controller(car, view, storage) {
         eo.preventDefault();
         car.stopMoveBottom();
     }
-
 }

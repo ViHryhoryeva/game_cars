@@ -45,7 +45,6 @@ function Engine(objects) {
         }
 
         function carMove() {
-
             let carPosition = car.getCarPosition();
             if (carPosition.y < 0 && car.getSpeedY() < 0)
                 car.stopMoveTop();
@@ -199,7 +198,6 @@ function Engine(objects) {
             }
         }
 
-
         function playSound(audio) {
             audio.currentTime = 0;
             audio.play();
@@ -213,7 +211,6 @@ function Engine(objects) {
             audio.play(); // запуск звука
             audio.pause(); // и сразу остановка
         }
-
     }
 }
 

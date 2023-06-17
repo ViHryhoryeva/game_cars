@@ -1,36 +1,4 @@
 'use strict'
-// function GameData() {
-//     let self = this;
-//
-//     let state = 1;
-//     let coins = 0;
-//     let player
-//
-//     self.getState = function () {
-//         return state;
-//     }
-//
-//     self.setState = function (newState) {
-//         state = newState;
-//     }
-//
-//     self.getCoins = function () {
-//         return state;
-//     }
-//
-//     self.addCoin = function (newState) {
-//         coins++;
-//     }
-//
-//     self.getPlayer = function () {
-//         return player;
-//     }
-//
-//     self.setPlayer = function (value) {
-//         player = value;
-//     }
-// }
-
 function Car(element) {
     let self = this;
 

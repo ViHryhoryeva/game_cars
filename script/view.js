@@ -14,8 +14,8 @@ function View() {
     const saveBtn = document.querySelector('.save');
     const playerNameField = document.getElementById('IName');
     const restartBtn = document.querySelector('.restart-btn');
+    const errorName = document.querySelector('.errorName');
 
-    // 4 сенсорные кнопки
     const arrowTop = document.querySelector('.arrowTop');
     const arrowLeft = document.querySelector('.arrowLeft');
     const arrowRight = document.querySelector('.arrowRight');
@@ -96,11 +96,6 @@ function View() {
         text.innerHTML = score.toString();
     }
 
-    // self.getPlayerName = function (value) {
-    //     gamePlayerForm.style.display = value;
-    //
-    // }
-
     self.pause = function () {
         console.log("pause")
         pauseBtn.children[1].style.display = 'block';
@@ -149,4 +144,11 @@ function View() {
     self.getMoveArrowDown = function () {
         return arrowDown;
     }
+
+    // self.validName = function () {
+    //     if (playerNameField.value === null) {
+    //     }
+    //     alert('Введите имя игрока');
+    //     return false;
+    // }
 }
