@@ -4,7 +4,7 @@ function Storage(view) {
     let self = this;
 
     const url = 'https://fe.it-academy.by/AjaxStringStorage2.php';
-    const stringName='HRYHORYEVA_VI_RECORD_CARS_TEST';
+    const stringName='HRYHORYEVA_VI_RECORD_CARS';
     let updatePassword;
 
 
@@ -39,19 +39,6 @@ function Storage(view) {
             } else {
                 users = JSON.parse(response.result);
             }
-
-            // let isCurrentUserExists = false;
-            // for (let i = 0; i < users.length; i++) {
-            //     if (currentUser.name === users[i].name) {
-            //         users[i].score = currentUser.score;
-            //         isCurrentUserExists = true;
-            //         break;
-            //     }
-            // }
-            //
-            // if (!isCurrentUserExists) {
-            //     users.push(currentUser);
-            // }
 
             users.push(currentUser);
 
@@ -90,7 +77,7 @@ function Storage(view) {
         }
     }
 
-    function errorHandler(jqXHR,statusStr,errorStr) {
+    function errorHandler(jqXHR, statusStr, errorStr) {
         alert(statusStr+' '+errorStr);
     }
 

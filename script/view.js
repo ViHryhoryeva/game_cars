@@ -14,7 +14,6 @@ function View() {
     const saveBtn = document.querySelector('.save');
     const playerNameField = document.getElementById('IName');
     const restartBtn = document.querySelector('.restart-btn');
-    const errorName = document.querySelector('.errorName');
 
     const arrowTop = document.querySelector('.arrowTop');
     const arrowLeft = document.querySelector('.arrowLeft');
@@ -50,7 +49,6 @@ function View() {
         table.appendChild(lineTable);
 
         for (let i= 0; i < users.length && i < 9; i++) {
-            //console.log(users[i])
             let currentRow = document.createElement('tr');
             let cellTable1 = document.createElement('td');
             cellTable1.textContent = (i+1).toString();
@@ -58,7 +56,6 @@ function View() {
             cellTable2.textContent = users[i].name;
             let cellTable3 = document.createElement('td');
             cellTable3.textContent = users[i].score;
-
 
             currentRow.appendChild(cellTable1);
             currentRow.appendChild(cellTable2);
@@ -69,8 +66,6 @@ function View() {
         tableDiv.appendChild(table);
         recordTable.style.display = 'block';
     }
-
-
 
     self.showNewGameForm = function () {
         recordTable.style.display = 'none';
@@ -144,11 +139,4 @@ function View() {
     self.getMoveArrowDown = function () {
         return arrowDown;
     }
-
-    // self.validName = function () {
-    //     if (playerNameField.value === null) {
-    //     }
-    //     alert('Введите имя игрока');
-    //     return false;
-    // }
 }

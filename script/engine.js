@@ -11,7 +11,7 @@ function Engine(objects) {
 
     // добавляем музыку
     let carAudio = new Audio('./music/car.mp3');
-    carAudio.volume = 0.3;
+    carAudio.volume = 0.2;
     let crashAudio = new Audio('./music/crash.mp3');
     crashAudio.volume = 0.2;
     let coinAudio = new Audio('./music/coin.mp3');

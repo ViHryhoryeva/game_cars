@@ -235,16 +235,6 @@ body {
     .car2 {
         width: 60px;
     }
-    /*.arrowLeft {*/
-    /*    left: 0;*/
-    /*}*/
-    /*.arrowTop,*/
-    /*.arrowDown {*/
-    /*    left: 40%;*/
-    /*}*/
-    /*.arrowRight {*/
-    /*    right: 10%;*/
-    /*}*/
     .tree1 {
         transform: translate(-100%, -5vh);
         width: 45%;

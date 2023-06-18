@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 init();
 function init() {
     const carElement = document.querySelector('.car');
